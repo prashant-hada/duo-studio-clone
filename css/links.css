@@ -1,0 +1,120 @@
+*{
+    margin: 0%;
+    padding:0%;
+    box-sizing: border-box;
+    font-family: PP mori;
+    color: #fff;
+    
+}
+html,body{
+    height: 100%;
+    width: 100%;
+        background-color:black;
+        margin: 0%;
+    padding:0%;
+    overflow: hidden;
+}
+.wrapper{
+    position: relative;
+    /* background-color:black; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vw;
+    padding: 4vw 0;
+}
+h1{
+    text-align: center;
+    font-size: 2.75vmax;
+    font-weight: 400;
+}
+h2{
+    font-size: 2.15vmax;
+    font-weight: 300;
+}
+a{
+    text-decoration: none;
+    padding:1vw 2.5vw;
+    font-size: 1vmax;
+    z-index: 9;
+}
+img{
+    height: 30vmax;
+    width: 50vmax;
+}
+.pills{
+    position: relative;
+    bottom: 29%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:13vmax;
+}
+.btn{
+    align-items: center;
+    height: 2.75vmax;
+    width: 5.5vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    
+    border: none;  
+}
+.red{
+    background-color:red;
+}
+.blue{
+    background-color: rgb(34, 34, 248);
+}
+.desc{
+    position:relative;
+    bottom: 28vmin;
+    height: 40vw;
+    width: 100vw;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0 7vw;
+}
+.para{
+    display: inline;
+    width: 20vw;
+    
+}
+.para p{
+    font-size: 1.5vw;
+}
+@media (width<900px) {
+    .wrapper{
+        padding: 10vmax 5vmax;
+    }
+    .desc{
+        justify-content: center;
+        gap: 12.5vmin;
+        bottom: 0;
+        padding-top: 4vmin;
+    }
+    .para p{
+        font-size: 1.85vmax;
+    }
+    .para{
+        height: 40vw;
+        width: 30%;
+        
+    }
+}
+
+@media (width<500px){
+  .btn{
+    position: relative;
+    top:40%;
+  }
+}
